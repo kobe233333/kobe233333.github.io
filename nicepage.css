@@ -8364,7 +8364,7 @@ img.u-image,
 .u-back-image.u-image-contain,
 .u-image.u-image-contain {
   object-fit: contain;
-  background-size: contain;
+  /*background-size: contain;*/
 }
 .u-back-image.u-image-tiles,
 .u-image.u-image-tiles {
