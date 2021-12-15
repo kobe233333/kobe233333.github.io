@@ -11,11 +11,15 @@
 <link rel="stylesheet" href="Home.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 3.10.2, www.11moban.com">
+    <meta name="generator" content="Tong">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    
-    
-    
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <script src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=uVIvqeSbEGC6jGP3bFSx8cmu63T4j6uD"></script>
     
     
     
@@ -24,8 +28,7 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"url": "index.html"
-}</script>
+		"url": "index.html"}</script>
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#73a3de">
@@ -146,6 +149,7 @@
         </div>
       </div>
     </section>
+
 <!--    <section class="u-clearfix u-section-4" id="sec-0a56">-->
 <!--      <img src="images/358031b08eefaf6dd090cf867882e7b6.png" alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1">-->
 <!--    </section>-->
@@ -173,71 +177,102 @@
 <!--        </div>-->
 <!--      </div>-->
 <!--    </section>-->
-    <section class="u-clearfix u-image u-image-contain u-section-6" id="sec-f03f">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-gutter-20 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-size-20 u-size-30-md">
-                <div class="u-layout-col">
-                  <div class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1">
-                    <div class="u-container-layout"></div>
-                  </div>
-                  <div class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-2">
-                    <div class="u-container-layout"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="u-size-20 u-size-30-md">
-                <div class="u-layout-col">
-                  <div class="u-container-style u-hidden-sm u-hidden-xs u-image u-layout-cell u-size-20 u-image-3">
-                    <div class="u-container-layout"></div>
-                  </div>
-                  <div class="u-container-style u-hidden-sm u-hidden-xs u-image u-layout-cell u-size-20 u-image-4">
-                    <div class="u-container-layout"></div>
-                  </div>
-                  <div class="u-container-style u-hidden-sm u-hidden-xs u-image u-layout-cell u-size-20 u-image-5">
-                    <div class="u-container-layout"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="u-size-20 u-size-60-md">
-                <div class="u-layout-col">
-                  <div class="u-container-style u-hidden-md u-hidden-sm u-hidden-xs u-image u-layout-cell u-right-cell u-size-30 u-image-6">
-                    <div class="u-container-layout"></div>
-                  </div>
-                  <div class="u-container-style u-hidden-md u-hidden-sm u-hidden-xs u-image u-layout-cell u-right-cell u-size-30 u-image-7">
-                    <div class="u-container-layout"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="u-container-style u-expanded-width-xs u-group u-group-1">
-          <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-8">
-            <h2 class="u-text u-text-1">At Your Service</h2>
-            <p class="u-text u-text-2">The following come as standard when travelling with Original Travel.</p>
-            <p class="u-text u-text-3">Curated by a dedicated&nbsp;travel design team, the company has initially launched with 12 innovative experiences, and will continue to add to the collection as new journeys are created. Completely bespoke itineraries are also available,
-                        upon request.</p>
-            <a href="#" class="u-border-2 u-border-grey-dark-1 u-btn u-button-style u-btn-1">view more</a>
-          </div>
-        </div>
-      </div>
+<!--    <section class="u-clearfix u-image u-image-contain u-section-6" id="sec-f03f">-->
+    <section class="u-clearfix u-image u-image-contain u-section-5" id="sec-f6d7">
+      <div class="container" id="container"></div>
+
+      <script type="text/javascript">
+        var map = new BMapGL.Map('container');
+        map.centerAndZoom(new BMapGL.Point(104.304, 30.928), 6);
+        map.enableScrollWheelZoom(true);
+        // 创建点标记
+        var marker1 = new BMapGL.Marker(new BMapGL.Point(104.004, 30.5028));
+        var marker2 = new BMapGL.Marker(new BMapGL.Point(121.473, 31.232));
+        var marker3 = new BMapGL.Marker(new BMapGL.Point(120.154,30.287));
+        var marker4 = new BMapGL.Marker(new BMapGL.Point(116.708, 23.371));
+        map.addOverlay(marker1);
+        map.addOverlay(marker2);
+        map.addOverlay(marker3);
+        map.addOverlay(marker4);
+        var marker5 = new BMapGL.Marker(new BMapGL.Point(113.281, 23.125));
+        map.addOverlay(marker5);
+        var marker6 = new BMapGL.Marker(new BMapGL.Point(106.505, 29.533 ));
+        map.addOverlay(marker6);
+        var marker7 = new BMapGL.Marker(new BMapGL.Point(102.712, 25.041 ));
+        map.addOverlay(marker7);
+        var marker8 = new BMapGL.Marker(new BMapGL.Point(100.240, 25.593 ));
+        map.addOverlay(marker8);
+        var marker9 = new BMapGL.Marker(new BMapGL.Point(118.7674, 32.041544 ));
+        map.addOverlay(marker9);
+        var marker10 = new BMapGL.Marker(new BMapGL.Point(118.3173, 29.7092 ));
+        map.addOverlay(marker10);
+        var marker11 = new BMapGL.Marker(new BMapGL.Point(103.7613, 29.5820 ));
+        map.addOverlay(marker11);
+      </script>
+<!--      <div class="u-clearfix u-sheet u-sheet-1">-->
+<!--        <div class="u-clearfix u-gutter-20 u-layout-wrap u-layout-wrap-1">-->
+<!--          <div class="u-layout">-->
+<!--            <div class="u-layout-row">-->
+<!--              <div class="u-size-20 u-size-30-md">-->
+<!--                <div class="u-layout-col">-->
+<!--                  <div class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-1">-->
+<!--                    <div class="u-container-layout"></div>-->
+<!--                  </div>-->
+<!--                  <div class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-2">-->
+<!--                    <div class="u-container-layout"></div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="u-size-20 u-size-30-md">-->
+<!--                <div class="u-layout-col">-->
+<!--                  <div class="u-container-style u-hidden-sm u-hidden-xs u-image u-layout-cell u-size-20 u-image-3">-->
+<!--                    <div class="u-container-layout"></div>-->
+<!--                  </div>-->
+<!--                  <div class="u-container-style u-hidden-sm u-hidden-xs u-image u-layout-cell u-size-20 u-image-4">-->
+<!--                    <div class="u-container-layout"></div>-->
+<!--                  </div>-->
+<!--                  <div class="u-container-style u-hidden-sm u-hidden-xs u-image u-layout-cell u-size-20 u-image-5">-->
+<!--                    <div class="u-container-layout"></div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="u-size-20 u-size-60-md">-->
+<!--                <div class="u-layout-col">-->
+<!--                  <div class="u-container-style u-hidden-md u-hidden-sm u-hidden-xs u-image u-layout-cell u-right-cell u-size-30 u-image-6">-->
+<!--                    <div class="u-container-layout"></div>-->
+<!--                  </div>-->
+<!--                  <div class="u-container-style u-hidden-md u-hidden-sm u-hidden-xs u-image u-layout-cell u-right-cell u-size-30 u-image-7">-->
+<!--                    <div class="u-container-layout"></div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="u-container-style u-expanded-width-xs u-group u-group-1">-->
+<!--          <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-container-layout-8">-->
+<!--            <h2 class="u-text u-text-1">At Your Service</h2>-->
+<!--            <p class="u-text u-text-2">The following come as standard when travelling with Original Travel.</p>-->
+<!--            <p class="u-text u-text-3">Curated by a dedicated&nbsp;travel design team, the company has initially launched with 12 innovative experiences, and will continue to add to the collection as new journeys are created. Completely bespoke itineraries are also available,-->
+<!--                        upon request.</p>-->
+<!--            <a href="#" class="u-border-2 u-border-grey-dark-1 u-btn u-button-style u-btn-1">view more</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
     </section>
     
-    
-    
     <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://www.11moban.com/website-templates" target="_blank">
-        <span>Website Templates</span>
-      </a>
+<!--      <a class="u-link" href="https://www.11moban.com/website-templates" target="_blank">-->
+<!--        <span>Website Templates</span>-->
+<!--      </a>-->
       <p class="u-text">
-        <span>created with</span>
+        <span>created by Theo</span>
       </p>
-      <a class="u-link" href="https://www.11moban.com/html-website-builder" target="_blank">
-        <span>HTML Website Builder</span>
-      </a>. 
+<!--      <a class="u-link" href="https://www.11moban.com/html-website-builder" target="_blank">-->
+<!--        <span>HTML Website Builder</span>-->
+<!--      </a>. -->
     </section>
   </body>
 </html>
+
+
