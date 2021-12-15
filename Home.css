@@ -1,7 +1,7 @@
 .container {
   overflow: hidden;
   width: 80vw;
-  height: 60vh;
+  height: 70vh;
   /*height: auto;*/
   /*width: auto;*/
   /*positon:relative;*/
@@ -820,7 +820,7 @@
 
 .u-section-5 .u-text-1 {
   font-weight: 700;
-  margin: 45px 128px 0 0;
+  margin: 55px 128px  0 55px ;
 }
 
 .u-section-5 .u-text-2 {

@@ -31560,6 +31560,7 @@ a.u-button-style.u-text-body-alt-color,
 a.u-button-style.u-text-body-alt-color[class*="u-border-"] {
   color: #ffffff !important;
 }
+.u-text-body-alt-color2{color:#7ba8e1}
 a.u-button-style.u-text-body-alt-color:hover,
 a.u-button-style.u-text-body-alt-color[class*="u-border-"]:hover,
 a.u-button-style.u-text-body-alt-color:focus,
